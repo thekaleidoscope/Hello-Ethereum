@@ -1,0 +1,85 @@
+{
+  "contract_name": "hello1",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "val",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "name": "newval",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6103e86000555b5b610102806100276000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166312065fe081146050578063b69ef8a8146072578063b6b55f25146094575b600080fd5b3415605a57600080fd5b606060b9565b60405190815260200160405180910390f35b3415607c57600080fd5b606060c0565b60405190815260200160405180910390f35b3415609e57600080fd5b606060043560c6565b60405190815260200160405180910390f35b6000545b90565b60005481565b600080548201908190555b9190505600a165627a7a72305820d81417ad1082923e78accc22a6e128bd056555523c573931268767f1be0028830029",
+  "networks": {
+    "1503210644848": {
+      "events": {},
+      "links": {},
+      "address": "0x7712cef4d6fb168e77af9986c817f2b70977853b",
+      "updated_at": 1503216084766
+    },
+    "1503485250178": {
+      "links": {},
+      "events": {},
+      "updated_at": 1503487404836
+    },
+    "1503489995750": {
+      "links": {},
+      "events": {},
+      "updated_at": 1503491069617
+    },
+    "1503545501438": {
+      "links": {},
+      "events": {},
+      "updated_at": 1503546598588
+    },
+    "1504107618719": {
+      "links": {},
+      "events": {},
+      "updated_at": 1504108514984
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1504108514984
+}
