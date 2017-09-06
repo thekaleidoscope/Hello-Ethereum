@@ -2,22 +2,47 @@ pragma solidity ^0.4.4;
 
 contract Test1{
   address public owner ;
+  uint ExRate=25;
 
   mapping(address=>uint) Wallet;
-  mapping(address=>uint) Cars;
+  mapping(address=>uint) Property;
 
-
+//Init Config
   function Test1(){
     owner= msg.sender;
     Wallet[owner] = 1000;
-    Cars[owner]=2;
+    Property[owner]=0;
+  }
+  function sendP(address ad , uint P)returns(bool St){
+    Property[ad]=P;
+return true;
+  }
+//Transfer function
+
+  function makeTrans(address usr,uint amt) returns (bool State) {
+
+    if((amt/ExRate)<=0){
+      return false;
+    }
+
+  uint  Ar=amt/ExRate;
+    Wallet[owner]-=amt;
+    Wallet[usr]+=amt;
+
+    Property[owner]+=Ar;
+    Property[usr]-=Ar;
+
+    return true;
   }
 
-  function getBalence(address usr) returns (uint bal) {
-    return Wallet[usr]; }
+  //Check Balance
+function balance(address usr) constant returns (uint bal,uint ar){
+  return (Wallet[usr],Property[usr]);
+}
 
 
-  function transfer(address to,uint amt) returns (bool State){
+
+/*  function transfer(address to,uint amt) returns (bool State){
 
     if(amt>Wallet[owner]){
       return false;
@@ -30,6 +55,6 @@ contract Test1{
     return true;
 
   }
-
+*/
 
 }

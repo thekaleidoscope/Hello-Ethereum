@@ -8,5 +8,5 @@ module.exports = function(deployer) {
   //deployer.link(ConvertLib, MetaCoin);
   //deployer.deploy(MetaCoin);
   deployer.deploy(hello1);
-  deployer.deploy(hello2);
+  deployer.deploy(Test1);
 };
