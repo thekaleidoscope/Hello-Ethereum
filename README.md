@@ -5,7 +5,7 @@ Works By implementing Solidity on Truffle.
 
 Most of the code is similar to JS.
 
-#If you find some illogical statement please report it back.
+*If you find some illogical statement please report it back.
 
 This smart contract performs a simple transaction across Eth Accounts.
 
