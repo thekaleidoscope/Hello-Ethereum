@@ -3,10 +3,11 @@
 var hello1 = artifacts.require("./hello1.sol");
 var hello2 = artifacts.require("./hello2.sol");
 var Test1 = artifacts.require("./Test1.sol");
+var Test2 = artifacts.require("./Test2.sol");
 module.exports = function(deployer) {
   //deployer.deploy(ConvertLib);
   //deployer.link(ConvertLib, MetaCoin);
   //deployer.deploy(MetaCoin);
-  deployer.deploy(hello1);
-  deployer.deploy(Test1);
+//  deployer.deploy(hello1);
+  deployer.deploy(Test2);
 };

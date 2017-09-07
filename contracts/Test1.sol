@@ -13,6 +13,8 @@ contract Test1{
     Wallet[owner] = 1000;
     Property[owner]=0;
   }
+
+  // Send Some Property
   function sendP(address ad , uint P)returns(bool St){
     Property[ad]=P;
 return true;
